@@ -5,18 +5,22 @@ mongoose.connect("mongodb://127.0.0.1:27017/project")
 const schema=new mongoose.Schema({
     fullname:{
         type:String, 
+        maxLength: 50,
         required: true
     },
     address1:{
         type:String,
+        maxLength: 100,
         required:true
     },
     address2:{
         type:String,
+        maxLength: 100,
         required:false
     },
     city:{
         type:String,
+        maxLength: 100,
         required:true
     },
     states:{
@@ -24,7 +28,9 @@ const schema=new mongoose.Schema({
         required:true
     },
     zip:{
-        type:Number,
+        type:String,
+        minLength: 5,
+        maxLength: 9,
         required:true
     }
 
