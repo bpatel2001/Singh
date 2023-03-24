@@ -14,6 +14,10 @@ app.get("/",(req,res)=>{
     res.render("login")
 })
 
+app.get("/index",(req,res)=>{
+    res.render("login")
+})
+
 app.get("/register",(req,res)=>{
     res.render("register")
 })
@@ -24,6 +28,14 @@ app.get("/login",(req,res)=>{
 
 app.get("/profmgmt",(req,res)=>{
     res.render("profmgmt")
+})
+
+app.get("/quoteform",(req,res)=>{
+    res.render("quoteform")
+})
+
+app.get("/quotehist",(req,res)=>{
+    res.render("quotehist")
 })
 
 app.post("/register",async (req,res)=>{

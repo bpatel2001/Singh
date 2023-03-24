@@ -5,7 +5,8 @@ mongoose.connect("mongodb://127.0.0.1:27017/project")
 const schema=new mongoose.Schema({
     username:{
         type:String, 
-        required: true
+        required: true,
+        unique: true
     },
     password:{
         type:String,
