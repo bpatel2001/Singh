@@ -7,3 +7,11 @@ Installing dependencies from package.json:
 npm install
 ```
 Requires: MongoDB server for database connection.
+
+## Usage
+```bash
+npm run devStart
+```
+This starts the site using nodemon.
+
+Traverse to localhost:3000 to access the website.
