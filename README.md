@@ -14,4 +14,4 @@ npm run devStart
 ```
 This starts the site using nodemon.
 
-Traverse to localhost:3000 to access the website.
+Traverse to "localhost:3000" on a browser to access the website.
